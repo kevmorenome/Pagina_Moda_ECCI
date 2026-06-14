@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia · Moda ECCI</title>
+  <meta name="description" content="Crónica personal de la experiencia en Moda ECCI: aprendizajes sobre color, diseño y su relación con el desarrollo Frontend.">
+  <meta name="author" content="Moda ECCI · ECCI">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <div class="progress-rail" aria-hidden="true">
+    <div class="progress-rail__bar"></div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-ecci" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-dot" aria-hidden="true"></span>
+          Moda ECCI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">
+              <span class="lang-es">Inicio</span><span class="lang-en">Home</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link active" href="experiencia.html">
+              <span class="lang-es">Experiencia</span><span class="lang-en">Experience</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="glosario.html">
+              <span class="lang-es">Glosario</span><span class="lang-en">Glossary</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="conclusion.html">
+              <span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span>
+            </a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <div class="lang-switch" role="group" aria-label="Selector de idioma / Language switch">
+                <button type="button" data-lang-option="es" aria-pressed="true">ES</button>
+                <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO DE PÁGINA
+         ============================================================ -->
+    <section class="page-hero bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-clay reveal">
+          <span class="chip-swatch" style="background:var(--clay)" aria-hidden="true"></span>
+          <span class="lang-es">Crónica personal</span><span class="lang-en">Personal chronicle</span>
+          <span class="chip-code">#C1502E</span>
+        </div>
+        <h1 class="reveal">
+          <span class="lang-es">La experiencia de Moda ECCI</span>
+          <span class="lang-en">The Moda ECCI experience</span>
+        </h1>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Más allá de los contenidos técnicos, asistir a Moda ECCI fue una experiencia
+            formativa en sí misma: estar en una sala donde la moda, el arte y el diseño se
+            cruzan con la mirada de quienes, día a día, construimos productos digitales.
+          </span>
+          <span class="lang-en">
+            Beyond the technical content, attending Moda ECCI was a formative experience in
+            itself: being in a room where fashion, art and design intersect with the
+            perspective of those of us who build digital products every day.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CRÓNICA
+         ============================================================ -->
+    <section class="section-pad bg-paper">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <article class="chronicle reveal">
+
+              <h2>
+                <span class="lang-es">Llegar sin saber qué esperar</span>
+                <span class="lang-en">Arriving without knowing what to expect</span>
+              </h2>
+              <p class="drop-cap lang-es">
+                Moda ECCI se presentaba, en el papel, como un evento sobre la industria de
+                la moda, la creatividad y la innovación. Llegamos esperando charlas sobre
+                tendencias, materiales o procesos de producción. Lo que encontramos fue algo
+                distinto y, sinceramente, mucho más útil para quienes trabajamos en
+                tecnología: una conferencia completa dedicada a la <strong>Teoría del
+                Color</strong>, a cargo de la colorista chilena Sara Viloria.
+              </p>
+              <p class="lang-en">
+                On paper, Moda ECCI was presented as an event about the fashion industry,
+                creativity and innovation. We arrived expecting talks about trends,
+                materials or production processes. What we found was something different
+                and, honestly, far more useful for those of us working in technology: an
+                entire talk dedicated to <strong>Color Theory</strong>, delivered by the
+                Chilean colorist Sara Viloria.
+              </p>
+
+              <p class="lang-es">
+                Desde los primeros minutos quedó claro que esta no sería una charla
+                "decorativa" sobre combinaciones bonitas. Viloria abrió con una pregunta
+                incómoda — ¿qué es realmente el color? — y mostró cómo ni siquiera fuentes
+                tan serias como la RAE y el diccionario de Oxford logran definirlo de la
+                misma manera. Esa primera idea ya cambió la forma en la que escuchamos el
+                resto de la charla: si ni los expertos en lenguaje se ponen de acuerdo, tal
+                vez el color es menos "objetivo" de lo que solemos asumir cuando elegimos
+                la paleta de una interfaz.
+              </p>
+              <p class="lang-en">
+                From the first few minutes it was clear this wouldn't be a "decorative" talk
+                about pretty combinations. Viloria opened with an uncomfortable question —
+                what is color, really? — and showed how even sources as serious as the RAE
+                and the Oxford dictionary can't define it the same way. That first idea
+                already changed how we listened to the rest of the talk: if even language
+                experts can't agree, maybe color is less "objective" than we tend to assume
+                when picking an interface palette.
+              </p>
+
+              <div class="pull-quote">
+                <span class="lang-es">"Una persona con colores nunca está sola."</span>
+                <span class="lang-en">"A person with colors is never alone."</span>
+              </div>
+
+              <h2>
+                <span class="lang-es">El color como lenguaje, no como decoración</span>
+                <span class="lang-en">Color as language, not decoration</span>
+              </h2>
+              <p class="lang-es">
+                Una de las partes más reveladoras fue el recorrido por la historia del
+                color: cómo el púrpura se volvió sinónimo de realeza por su escasez, cómo
+                el azul ultramar quedó reservado para lo sagrado por su costo, o cómo
+                algunos pigmentos —tan deseados como peligrosos— pusieron en riesgo a
+                quienes los producían. Lo que antes parecía una simple curiosidad histórica
+                se convirtió, durante la charla, en una lección sobre cómo el significado de
+                un color nunca es "natural": siempre está construido por contexto, escasez,
+                poder y cultura.
+              </p>
+              <p class="lang-en">
+                One of the most revealing parts was the walk through the history of color:
+                how purple became synonymous with royalty due to its scarcity, how
+                ultramarine blue was reserved for the sacred because of its cost, or how
+                some pigments — as desirable as they were dangerous — put their producers at
+                risk. What might have seemed like a simple historical curiosity became, in
+                the talk, a lesson on how a color's meaning is never "natural": it is always
+                built by context, scarcity, power and culture.
+              </p>
+
+              <p class="lang-es">
+                Esa misma lógica reapareció cuando Viloria habló de psicología del color.
+                En lugar de presentar una lista de "el rojo significa esto, el azul significa
+                aquello" como verdades absolutas, insistió en que esas asociaciones cambian
+                según el país, la historia y el momento social. Para alguien que diseña
+                interfaces, esto es un llamado de atención: las guías de psicología del color
+                que circulan en internet son un punto de partida, no un manual cerrado.
+              </p>
+              <p class="lang-en">
+                The same logic reappeared when Viloria talked about color psychology.
+                Instead of presenting a list of "red means this, blue means that" as
+                absolute truths, she insisted that these associations change depending on
+                country, history and social moment. For someone designing interfaces, this
+                is a wake-up call: the color-psychology guides circulating online are a
+                starting point, not a closed manual.
+              </p>
+
+              <h2>
+                <span class="lang-es">El círculo cromático: de la teoría al juego</span>
+                <span class="lang-en">The color wheel: from theory to play</span>
+              </h2>
+              <p class="lang-es">
+                La parte más "práctica" de la charla giró alrededor del círculo cromático:
+                complementarios, análogos, tríadas, cuadrados y rectángulos cromáticos. Lo
+                que más llamó la atención no fue la teoría en sí —bastante conocida para
+                quienes hemos trabajado en diseño— sino la insistencia de Viloria en que
+                <strong>cualquier combinación dentro del círculo puede funcionar</strong>.
+                Lo que determina si "funciona" o no es la proporción, el contexto y la
+                intención, no una regla fija de qué colores "van juntos".
+              </p>
+              <p class="lang-en">
+                The most "practical" part of the talk revolved around the color wheel:
+                complementary, analogous, triadic, square and rectangular color schemes.
+                What stood out most wasn't the theory itself — fairly familiar to those of
+                us who've worked in design — but Viloria's insistence that <strong>any
+                combination within the wheel can work</strong>. What determines whether it
+                "works" is proportion, context and intention, not a fixed rule about which
+                colors "go together".
+              </p>
+
+              <p class="lang-es">
+                Para hacer tangible esa idea, construimos en este sitio un círculo
+                cromático interactivo (lo puedes explorar en la página de inicio) que
+                permite tocar cualquier color y ver, en tiempo real, sus complementarios,
+                análogos, tríadas y combinaciones de cuadrado y rectángulo. Programarlo fue,
+                en sí mismo, una forma de aplicar lo aprendido: tradujimos una explicación
+                oral en una herramienta visual e interactiva, que es exactamente el tipo de
+                traducción que hacemos todos los días en Frontend.
+              </p>
+              <p class="lang-en">
+                To make that idea tangible, we built an interactive color wheel for this
+                site (you can explore it on the home page) that lets you tap any color and
+                see, in real time, its complementary, analogous, triadic, square and
+                rectangle combinations. Building it was, in itself, a way of applying what
+                we learned: we translated a spoken explanation into a visual, interactive
+                tool — exactly the kind of translation we do every day in Frontend.
+              </p>
+
+              <h2>
+                <span class="lang-es">Industria creativa y desarrollo de software: más cerca de lo que pensamos</span>
+                <span class="lang-en">Creative industry and software development: closer than we think</span>
+              </h2>
+              <p class="lang-es">
+                Una de las reflexiones que nos llevamos de Moda ECCI es que la industria
+                creativa —moda, ilustración, curaduría, arte— y el desarrollo de software
+                comparten un mismo problema de fondo: tomar decisiones subjetivas y
+                convertirlas en sistemas que otras personas puedan usar, repetir y escalar.
+                Una colección de moda necesita una paleta coherente que se sostenga en
+                distintas prendas y materiales; un sistema de diseño necesita tokens de
+                color que se sostengan en distintos componentes y pantallas. La lógica es,
+                en el fondo, la misma.
+              </p>
+              <p class="lang-en">
+                One of the takeaways from Moda ECCI is that the creative industry — fashion,
+                illustration, curation, art — and software development share the same
+                underlying problem: turning subjective decisions into systems that other
+                people can use, repeat and scale. A fashion collection needs a coherent
+                palette that holds up across different garments and materials; a design
+                system needs color tokens that hold up across different components and
+                screens. At its core, the logic is the same.
+              </p>
+
+              <h2>
+                <span class="lang-es">El color en la experiencia de usuario</span>
+                <span class="lang-en">Color in the user experience</span>
+              </h2>
+              <p class="lang-es">
+                Pensando ya en nuestra práctica diaria, la charla dejó varias aplicaciones
+                directas a UX: el uso del color para indicar estado (éxito, error,
+                advertencia), para crear jerarquía visual (qué elemento "pesa" más en una
+                pantalla) y para reforzar identidad de marca de forma consistente. También
+                quedó muy presente la importancia de sistemas como Pantone para garantizar
+                que un color se vea "igual" —o al menos predeciblemente similar— en
+                distintos dispositivos, algo directamente relacionado con la gestión de
+                color y accesibilidad en interfaces digitales.
+              </p>
+              <p class="lang-en">
+                Thinking about our daily practice, the talk left several direct
+                applications to UX: using color to indicate state (success, error,
+                warning), to create visual hierarchy (which element "weighs" more on a
+                screen), and to reinforce brand identity consistently. The importance of
+                systems like Pantone was also very present — ensuring a color looks "the
+                same", or at least predictably similar, across different devices, which
+                relates directly to color management and accessibility in digital
+                interfaces.
+              </p>
+
+              <div class="ratio ratio-16x9 reveal mt-4 mb-4" style="border-radius: var(--radius-md); overflow:hidden; box-shadow: var(--shadow-soft);">
+                <iframe
+                  src="https://www.youtube.com/embed/YPBmcJ5LA-8"
+                  title="Sara Viloria habla sobre teoría del color y marca"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p class="lang-es" style="font-size:0.85rem; color: var(--ink-soft);">
+                Video externo (YouTube): una conversación con Sara Viloria sobre cómo usar
+                el color en marcas y negocios — buen complemento a las ideas presentadas en
+                Moda ECCI.
+              </p>
+              <p class="lang-en" style="font-size:0.85rem; color: var(--ink-soft);">
+                External video (YouTube): a conversation with Sara Viloria on how to use
+                color in brands and businesses — a good complement to the ideas presented
+                at Moda ECCI.
+              </p>
+
+              <h2>
+                <span class="lang-es">Reflexión final: por qué importan estos espacios</span>
+                <span class="lang-en">Final reflection: why these spaces matter</span>
+              </h2>
+              <p class="lang-es">
+                Participar en actividades como Moda ECCI —aunque no estén directamente
+                etiquetadas como "de tecnología"— fortalece nuestra formación profesional de
+                una manera que un curso técnico difícilmente logra: nos obliga a salir del
+                marco habitual (componentes, frameworks, código) y a mirar los mismos
+                problemas —jerarquía, contraste, significado, sistema— desde otra
+                disciplina. Volvimos con una idea muy simple pero poderosa: <em>diseñar bien
+                con color no es decorar al final, es pensar desde el principio</em>.
+              </p>
+              <p class="lang-en">
+                Taking part in activities like Moda ECCI — even when they're not directly
+                labeled "tech" — strengthens our professional formation in a way a technical
+                course rarely does: it forces us out of our usual frame (components,
+                frameworks, code) and into looking at the same problems — hierarchy,
+                contrast, meaning, system — from another discipline. We came back with a
+                very simple but powerful idea: <em>designing well with color isn't decorating
+                at the end, it's thinking from the very beginning</em>.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="chronicle-side reveal">
+              <div class="chronicle-meta">
+                <h4><span class="lang-es">En esta página</span><span class="lang-en">On this page</span></h4>
+                <ul>
+                  <li class="lang-es">Llegar sin saber qué esperar</li>
+                  <li class="lang-en">Arriving without knowing what to expect</li>
+                  <li class="lang-es">El color como lenguaje, no como decoración</li>
+                  <li class="lang-en">Color as language, not decoration</li>
+                  <li class="lang-es">El círculo cromático: de la teoría al juego</li>
+                  <li class="lang-en">The color wheel: from theory to play</li>
+                  <li class="lang-es">Industria creativa y desarrollo de software</li>
+                  <li class="lang-en">Creative industry and software development</li>
+                  <li class="lang-es">El color en la experiencia de usuario</li>
+                  <li class="lang-en">Color in the user experience</li>
+                  <li class="lang-es">Reflexión final</li>
+                  <li class="lang-en">Final reflection</li>
+                </ul>
+              </div>
+
+              <div class="chronicle-meta mt-3">
+                <h4><span class="lang-es">Aprendizajes clave</span><span class="lang-en">Key takeaways</span></h4>
+                <ul>
+                  <li class="lang-es">El color no es neutral: tiene historia, poder y cultura.</li>
+                  <li class="lang-en">Color is not neutral: it has history, power and culture.</li>
+                  <li class="lang-es">No hay combinaciones "incorrectas", solo contextos distintos.</li>
+                  <li class="lang-en">There are no "wrong" combinations, only different contexts.</li>
+                  <li class="lang-es">Pantone y la colorimetría existen para que el color sea predecible.</li>
+                  <li class="lang-en">Pantone and colorimetry exist to make color predictable.</li>
+                  <li class="lang-es">La psicología del color es útil, pero no universal.</li>
+                  <li class="lang-en">Color psychology is useful, but not universal.</li>
+                </ul>
+              </div>
+
+              <div class="nota-frontend mt-3">
+                <strong><span class="lang-es">Nota Frontend</span><span class="lang-en">Frontend note</span></strong>
+                <p class="lang-es">
+                  Si trabajas en UI, prueba a documentar el "porqué" de cada color de tu
+                  paleta, no solo su valor hexadecimal. Esa pequeña práctica —tomada de la
+                  forma en que un colorista justifica una elección— mejora muchísimo las
+                  conversaciones con el resto del equipo.
+                </p>
+                <p class="lang-en">
+                  If you work in UI, try documenting the "why" behind each color in your
+                  palette, not just its hex value. That small practice — borrowed from how a
+                  colorist justifies a choice — greatly improves conversations with the rest
+                  of the team.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2>MODA ECCI</h2>
+      <p class="max-w-prose">
+        <span class="lang-es">Una crónica visual sobre color, diseño y Frontend, a partir de la conferencia de Sara Viloria en Moda ECCI.</span>
+        <span class="lang-en">A visual chronicle on color, design and Frontend, based on Sara Viloria's talk at Moda ECCI.</span>
+      </p>
+
+      <div class="footer-cols">
+        <div>
+          <h4><span class="lang-es">Sitio</span><span class="lang-en">Site</span></h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+            <li><a href="experiencia.html"><span class="lang-es">Experiencia</span><span class="lang-en">Experience</span></a></li>
+            <li><a href="glosario.html"><span class="lang-es">Glosario</span><span class="lang-en">Glossary</span></a></li>
+            <li><a href="conclusion.html"><span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Conferencia</span><span class="lang-en">Conference</span></h4>
+          <ul>
+            <li><a href="index.html#conferencista"><span class="lang-es">Sara Viloria</span><span class="lang-en">Sara Viloria</span></a></li>
+            <li><a href="index.html#historia"><span class="lang-es">Historia del color</span><span class="lang-en">History of color</span></a></li>
+            <li><a href="index.html#circulo"><span class="lang-es">Círculo cromático</span><span class="lang-en">Color wheel</span></a></li>
+            <li><a href="index.html#psicologia"><span class="lang-es">Psicología del color</span><span class="lang-en">Color psychology</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Recursos</span><span class="lang-en">Resources</span></h4>
+          <ul>
+            <li><a href="https://www.pantone.com/" target="_blank" rel="noopener">Pantone Institute</a></li>
+            <li><a href="https://www.rae.es/" target="_blank" rel="noopener">RAE</a></li>
+            <li><a href="https://saloria.cl/" target="_blank" rel="noopener">Sara Viloria — Saloria</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Créditos</span><span class="lang-en">Credits</span></h4>
+          <ul>
+            <li><span class="lang-es">Conferencista: Sara Viloria</span><span class="lang-en">Speaker: Sara Viloria</span></li>
+            <li><span class="lang-es">Proyecto académico ECCI</span><span class="lang-en">ECCI academic project</span></li>
+            <li><span class="lang-es">Iconografía: Bootstrap Icons</span><span class="lang-en">Icons: Bootstrap Icons</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Moda ECCI — ECCI</span>
+        <a href="index.html#inicio" class="back-to-top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+          <span class="lang-es">Volver arriba</span><span class="lang-en">Back to top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

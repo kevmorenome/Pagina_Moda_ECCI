@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glosario · Moda ECCI</title>
+  <meta name="description" content="Glosario bilingüe de teoría del color, diseño UX/UI, branding, Pantone, colorimetría y accesibilidad, a partir de la conferencia de Sara Viloria en Moda ECCI.">
+  <meta name="author" content="Moda ECCI · ECCI">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <div class="progress-rail" aria-hidden="true">
+    <div class="progress-rail__bar"></div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-ecci" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-dot" aria-hidden="true"></span>
+          Moda ECCI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">
+              <span class="lang-es">Inicio</span><span class="lang-en">Home</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">
+              <span class="lang-es">Experiencia</span><span class="lang-en">Experience</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link active" href="glosario.html">
+              <span class="lang-es">Glosario</span><span class="lang-en">Glossary</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="conclusion.html">
+              <span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span>
+            </a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <div class="lang-switch" role="group" aria-label="Selector de idioma / Language switch">
+                <button type="button" data-lang-option="es" aria-pressed="true">ES</button>
+                <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO DE PÁGINA
+         ============================================================ -->
+    <section class="page-hero bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-indigo reveal">
+          <span class="chip-swatch" style="background:var(--indigo)" aria-hidden="true"></span>
+          <span class="lang-es">Vocabulario compartido</span><span class="lang-en">Shared vocabulary</span>
+          <span class="chip-code">#3D4A78</span>
+        </div>
+        <h1 class="reveal">
+          <span class="lang-es">Glosario de color y diseño</span>
+          <span class="lang-en">Color &amp; design glossary</span>
+        </h1>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Una pequeña caja de herramientas con los términos que más se repitieron durante
+            la conferencia de Sara Viloria, junto con los conceptos de diseño UX/UI con los
+            que más se relacionan en el trabajo diario de Frontend. Cada término aparece en
+            español e inglés, con una definición breve.
+          </span>
+          <span class="lang-en">
+            A small toolbox with the terms that came up most often during Sara Viloria's
+            talk, alongside the UX/UI design concepts they relate to most in everyday
+            Frontend work. Each term appears in Spanish and English, with a short
+            definition.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BUSCADOR Y FILTROS
+         ============================================================ -->
+    <section class="section-pad-sm bg-paper">
+      <div class="container">
+
+        <div class="glossary-controls reveal">
+          <input type="search" id="glossary-search" autocomplete="off"
+                 aria-label="Buscar término en el glosario"
+                 data-placeholder-es="Buscar un término…"
+                 data-placeholder-en="Search a term…"
+                 placeholder="Buscar un término…">
+          <button type="button" class="btn-pill btn-outline-ink glossary-filter active" data-filter="todos">
+            <span class="lang-es">Todos</span><span class="lang-en">All</span>
+          </button>
+          <button type="button" class="btn-pill btn-outline-ink glossary-filter" data-filter="teoria-color">
+            <span class="lang-es">Teoría del color</span><span class="lang-en">Color theory</span>
+          </button>
+          <button type="button" class="btn-pill btn-outline-ink glossary-filter" data-filter="diseno-visual">
+            <span class="lang-es">Diseño visual</span><span class="lang-en">Visual design</span>
+          </button>
+          <button type="button" class="btn-pill btn-outline-ink glossary-filter" data-filter="ux-ui">
+            <span class="lang-es">UX / UI</span><span class="lang-en">UX / UI</span>
+          </button>
+          <button type="button" class="btn-pill btn-outline-ink glossary-filter" data-filter="branding">
+            <span class="lang-es">Branding</span><span class="lang-en">Branding</span>
+          </button>
+          <button type="button" class="btn-pill btn-outline-ink glossary-filter" data-filter="accesibilidad">
+            <span class="lang-es">Accesibilidad</span><span class="lang-en">Accessibility</span>
+          </button>
+        </div>
+
+        <!-- ============================================================
+             GRILLA DE TÉRMINOS
+             ============================================================ -->
+        <div class="glossary-grid reveal-stagger">
+
+          <article class="term-card" data-category="teoria-color">
+            <span class="term-es">Color · Color</span>
+            <h3 class="term-en">Hue</h3>
+            <p class="lang-es">El atributo que da nombre a un color (rojo, azul, amarillo…), es decir, su posición en el círculo cromático, independiente de cuán claro, oscuro o saturado esté.</p>
+            <p class="lang-en">The attribute that names a color (red, blue, yellow…) — its position on the color wheel, independent of how light, dark or saturated it is.</p>
+            <span class="term-cat lang-es">Teoría del color</span>
+            <span class="term-cat lang-en">Color theory</span>
+          </article>
+
+          <article class="term-card" data-category="teoria-color">
+            <span class="term-es">Saturación · Saturación</span>
+            <h3 class="term-en">Saturation</h3>
+            <p class="lang-es">La intensidad o pureza de un color. Un color muy saturado se ve vivo e intenso; al desaturarlo, se acerca al gris manteniendo su tono.</p>
+            <p class="lang-en">The intensity or purity of a color. A highly saturated color looks vivid and intense; desaturating it moves it toward gray while keeping its hue.</p>
+            <span class="term-cat lang-es">Teoría del color</span>
+            <span class="term-cat lang-en">Color theory</span>
+          </article>
+
+          <article class="term-card" data-category="teoria-color">
+            <span class="term-es">Luminosidad · Valor</span>
+            <h3 class="term-en">Value / Lightness</h3>
+            <p class="lang-es">Qué tan claro u oscuro es un color, independientemente de su tono. Es clave para garantizar contraste suficiente entre texto y fondo.</p>
+            <p class="lang-en">How light or dark a color is, regardless of its hue. It's key to ensuring enough contrast between text and background.</p>
+            <span class="term-cat lang-es">Teoría del color</span>
+            <span class="term-cat lang-en">Color theory</span>
+          </article>
+
+          <article class="term-card" data-category="teoria-color">
+            <span class="term-es">Colores complementarios · Colores complementarios</span>
+            <h3 class="term-en">Complementary colors</h3>
+            <p class="lang-es">Dos colores opuestos en el círculo cromático. Generan el contraste más fuerte posible y se usan para destacar elementos sobre el resto de la interfaz.</p>
+            <p class="lang-en">Two colors directly opposite each other on the wheel. They create the strongest possible contrast and are used to make elements stand out from the rest of an interface.</p>
+            <span class="term-cat lang-es">Teoría del color</span>
+            <span class="term-cat lang-en">Color theory</span>
+          </article>
+
+          <article class="term-card" data-category="teoria-color">
+            <span class="term-es">Tríada · Tríada</span>
+            <h3 class="term-en">Triad</h3>
+            <p class="lang-es">Tres colores ubicados a distancias iguales en el círculo cromático (120° entre cada uno). Producen paletas vibrantes y equilibradas.</p>
+            <p class="lang-en">Three colors spaced equally around the wheel (120° apart). They produce vibrant, balanced palettes.</p>
+            <span class="term-cat lang-es">Teoría del color</span>
+            <span class="term-cat lang-en">Color theory</span>
+          </article>
+
+          <article class="term-card" data-category="teoria-color">
+            <span class="term-es">Colores análogos · Colores análogos</span>
+            <h3 class="term-en">Analogous colors</h3>
+            <p class="lang-es">Colores vecinos en el círculo cromático. Comparten temperatura y crean armonías suaves, ideales para fondos o degradados.</p>
+            <p class="lang-en">Neighboring colors on the wheel. They share a similar temperature and create soft harmonies, ideal for backgrounds or gradients.</p>
+            <span class="term-cat lang-es">Teoría del color</span>
+            <span class="term-cat lang-en">Color theory</span>
+          </article>
+
+          <article class="term-card" data-category="diseno-visual">
+            <span class="term-es">Colorimetría · Colorimetría</span>
+            <h3 class="term-en">Colorimetry</h3>
+            <p class="lang-es">La disciplina que mide el color de forma objetiva y estandarizada, para que un mismo tono se reproduzca de manera consistente entre pantallas, telas o materiales.</p>
+            <p class="lang-en">The discipline that measures color objectively and in a standardized way, so the same shade reproduces consistently across screens, fabrics or materials.</p>
+            <span class="term-cat lang-es">Diseño visual</span>
+            <span class="term-cat lang-en">Visual design</span>
+          </article>
+
+          <article class="term-card" data-category="branding">
+            <span class="term-es">Pantone · Pantone</span>
+            <h3 class="term-en">Pantone</h3>
+            <p class="lang-es">Sistema de identificación cromática usado en diseño, impresión y moda para que un color específico signifique exactamente lo mismo sin importar dónde se reproduzca.</p>
+            <p class="lang-en">A color-identification system used in design, printing and fashion so a specific color means exactly the same thing no matter where it's reproduced.</p>
+            <span class="term-cat lang-es">Branding</span>
+            <span class="term-cat lang-en">Branding</span>
+          </article>
+
+          <article class="term-card" data-category="ux-ui">
+            <span class="term-es">Jerarquía visual · Jerarquía visual</span>
+            <h3 class="term-en">Visual hierarchy</h3>
+            <p class="lang-es">El orden en que una persona percibe los elementos de una pantalla, logrado mediante tamaño, color, contraste y posición.</p>
+            <p class="lang-en">The order in which a person perceives the elements on a screen, achieved through size, color, contrast and position.</p>
+            <span class="term-cat lang-es">UX / UI</span>
+            <span class="term-cat lang-en">UX / UI</span>
+          </article>
+
+          <article class="term-card" data-category="ux-ui">
+            <span class="term-es">Token de color · Token de color</span>
+            <h3 class="term-en">Color token</h3>
+            <p class="lang-es">Un nombre con propósito (primario, secundario, error, éxito) asignado a un valor de color, para que un sistema de diseño se mantenga coherente entre componentes.</p>
+            <p class="lang-en">A purpose-based name (primary, secondary, error, success) assigned to a color value, so a design system stays consistent across components.</p>
+            <span class="term-cat lang-es">UX / UI</span>
+            <span class="term-cat lang-en">UX / UI</span>
+          </article>
+
+          <article class="term-card" data-category="ux-ui">
+            <span class="term-es">Color de estado · Color de estado</span>
+            <h3 class="term-en">Status color</h3>
+            <p class="lang-es">Color asignado a un estado del sistema (éxito, advertencia, error, información) que debe mantenerse predecible en toda la interfaz.</p>
+            <p class="lang-en">A color assigned to a system state (success, warning, error, info) that must remain predictable throughout the interface.</p>
+            <span class="term-cat lang-es">UX / UI</span>
+            <span class="term-cat lang-en">UX / UI</span>
+          </article>
+
+          <article class="term-card" data-category="branding">
+            <span class="term-es">Identidad visual · Identidad visual</span>
+            <h3 class="term-en">Visual identity</h3>
+            <p class="lang-es">El conjunto de elementos gráficos —color, tipografía, formas— que hacen reconocible a una marca o proyecto en cualquier soporte.</p>
+            <p class="lang-en">The set of graphic elements — color, typography, shapes — that make a brand or project recognizable across any medium.</p>
+            <span class="term-cat lang-es">Branding</span>
+            <span class="term-cat lang-en">Branding</span>
+          </article>
+
+          <article class="term-card" data-category="branding">
+            <span class="term-es">Paleta de marca · Paleta de marca</span>
+            <h3 class="term-en">Brand palette</h3>
+            <p class="lang-es">El grupo reducido de colores que representa a una marca, pensado para funcionar tanto en piezas grandes como en pequeños detalles de interfaz.</p>
+            <p class="lang-en">The small set of colors that represents a brand, designed to work in both large pieces and small interface details.</p>
+            <span class="term-cat lang-es">Branding</span>
+            <span class="term-cat lang-en">Branding</span>
+          </article>
+
+          <article class="term-card" data-category="accesibilidad">
+            <span class="term-es">Contraste de accesibilidad · Contraste de accesibilidad</span>
+            <h3 class="term-en">Accessibility contrast</h3>
+            <p class="lang-es">La diferencia de luminosidad entre texto y fondo, medida según pautas como WCAG, necesaria para que el contenido sea legible para personas con baja visión.</p>
+            <p class="lang-en">The difference in lightness between text and background, measured against guidelines like WCAG, needed for content to be readable by people with low vision.</p>
+            <span class="term-cat lang-es">Accesibilidad</span>
+            <span class="term-cat lang-en">Accessibility</span>
+          </article>
+
+          <article class="term-card" data-category="accesibilidad">
+            <span class="term-es">Daltonismo · Deficiencia de visión del color</span>
+            <h3 class="term-en">Color vision deficiency</h3>
+            <p class="lang-es">Condición que afecta la forma en que algunas personas perciben ciertos colores, lo que obliga a no depender únicamente del color para transmitir información.</p>
+            <p class="lang-en">A condition that affects how some people perceive certain colors, which means information should never rely on color alone.</p>
+            <span class="term-cat lang-es">Accesibilidad</span>
+            <span class="term-cat lang-en">Accessibility</span>
+          </article>
+
+          <article class="term-card" data-category="diseno-visual">
+            <span class="term-es">Psicología del color · Psicología del color</span>
+            <h3 class="term-en">Color psychology</h3>
+            <p class="lang-es">El estudio de las asociaciones emocionales y simbólicas que las personas hacen con los colores, las cuales varían según cultura, país y contexto histórico.</p>
+            <p class="lang-en">The study of the emotional and symbolic associations people make with colors, which vary by culture, country and historical context.</p>
+            <span class="term-cat lang-es">Diseño visual</span>
+            <span class="term-cat lang-en">Visual design</span>
+          </article>
+
+          <article class="term-card" data-category="diseno-visual">
+            <span class="term-es">Pigmento · Pigmento</span>
+            <h3 class="term-en">Pigment</h3>
+            <p class="lang-es">La sustancia que da color a un material —pintura, tinta, tela— al absorber y reflejar la luz de forma selectiva.</p>
+            <p class="lang-en">The substance that gives a material — paint, ink, fabric — its color by selectively absorbing and reflecting light.</p>
+            <span class="term-cat lang-es">Diseño visual</span>
+            <span class="term-cat lang-en">Visual design</span>
+          </article>
+
+          <article class="term-card" data-category="ux-ui">
+            <span class="term-es">Curaduría visual · Curaduría visual</span>
+            <h3 class="term-en">Visual curation</h3>
+            <p class="lang-es">El proceso de seleccionar y ordenar qué elementos se muestran y en qué orden, para guiar la atención de quien observa o usa una interfaz.</p>
+            <p class="lang-en">The process of selecting and ordering which elements are shown and in what order, to guide the attention of whoever is viewing or using an interface.</p>
+            <span class="term-cat lang-es">UX / UI</span>
+            <span class="term-cat lang-en">UX / UI</span>
+          </article>
+
+          <article class="term-card" data-category="diseno-visual">
+            <span class="term-es">Círculo cromático · Círculo cromático</span>
+            <h3 class="term-en">Color wheel</h3>
+            <p class="lang-es">Representación circular de los colores ordenados según su tono, base de las relaciones de complementariedad, analogía y tríada.</p>
+            <p class="lang-en">A circular arrangement of colors ordered by hue, the basis for complementary, analogous and triadic relationships.</p>
+            <span class="term-cat lang-es">Diseño visual</span>
+            <span class="term-cat lang-en">Visual design</span>
+          </article>
+
+        </div>
+
+        <p id="glossary-no-results" class="no-results" hidden>
+          <span class="lang-es">No se encontraron términos para esa búsqueda.</span>
+          <span class="lang-en">No terms found for that search.</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NOTA FRONTEND DE CIERRE
+         ============================================================ -->
+    <section class="section-pad-sm bg-paper-soft">
+      <div class="container">
+        <div class="nota-frontend reveal" style="max-width:46rem;">
+          <strong><span class="lang-es">Nota Frontend</span><span class="lang-en">Frontend note</span></strong>
+          <p class="lang-es">
+            Tener un glosario compartido —como este— es, en pequeño, lo mismo que hace un
+            sistema de diseño: evita que cada persona del equipo le ponga un nombre distinto
+            a la misma idea. Cuando "color primario" significa lo mismo para diseño, desarrollo
+            y producto, las conversaciones se vuelven mucho más rápidas.
+          </p>
+          <p class="lang-en">
+            Having a shared glossary — like this one — is, on a small scale, exactly what a
+            design system does: it stops every person on the team from naming the same idea
+            differently. When "primary color" means the same thing for design, development
+            and product, conversations move much faster.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NAVEGACIÓN A OTRAS PÁGINAS
+         ============================================================ -->
+    <section class="section-pad bg-paper">
+      <div class="container">
+        <div class="chip-label text-clay reveal">
+          <span class="chip-swatch" style="background:var(--clay)" aria-hidden="true"></span>
+          <span class="lang-es">Sigue explorando</span><span class="lang-en">Keep exploring</span>
+        </div>
+        <h2 class="section-title reveal">
+          <span class="lang-es">Más de Moda ECCI</span>
+          <span class="lang-en">More from Moda ECCI</span>
+        </h2>
+
+        <div class="row g-3 mt-2 reveal-stagger">
+          <div class="col-md-4">
+            <a href="index.html" class="card page-cta bg-indigo text-decoration-none">
+              <div class="card-body">
+                <span class="eyebrow"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></span>
+                <h3><span class="lang-es">La conferencia</span><span class="lang-en">The talk</span></h3>
+                <p class="lang-es">La crónica completa sobre Sara Viloria y la Teoría del Color en Moda ECCI.</p>
+                <p class="lang-en">The full chronicle on Sara Viloria and Color Theory at Moda ECCI.</p>
+                <span class="arrow"><span class="lang-es">Volver al inicio</span><span class="lang-en">Back to home</span> &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="experiencia.html" class="card page-cta bg-clay text-decoration-none">
+              <div class="card-body">
+                <span class="eyebrow"><span class="lang-es">Crónica personal</span><span class="lang-en">Personal chronicle</span></span>
+                <h3><span class="lang-es">Experiencia</span><span class="lang-en">Experience</span></h3>
+                <p class="lang-es">Lo que vivimos y aprendimos al participar de Moda ECCI, contado en primera persona.</p>
+                <p class="lang-en">What we lived and learned by attending Moda ECCI, told in first person.</p>
+                <span class="arrow"><span class="lang-es">Leer la crónica</span><span class="lang-en">Read the chronicle</span> &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="conclusion.html" class="card page-cta bg-viridian text-decoration-none">
+              <div class="card-body">
+                <span class="eyebrow"><span class="lang-es">Cierre</span><span class="lang-en">Closing</span></span>
+                <h3><span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span></h3>
+                <p class="lang-es">Cómo el color, el diseño y la tecnología se conectan con la sostenibilidad y la producción responsable.</p>
+                <p class="lang-en">How color, design and technology connect to sustainability and responsible production.</p>
+                <span class="arrow"><span class="lang-es">Leer cierre</span><span class="lang-en">Read closing</span> &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2>MODA ECCI</h2>
+      <p class="max-w-prose">
+        <span class="lang-es">Una crónica visual sobre color, diseño y Frontend, a partir de la conferencia de Sara Viloria en Moda ECCI.</span>
+        <span class="lang-en">A visual chronicle on color, design and Frontend, based on Sara Viloria's talk at Moda ECCI.</span>
+      </p>
+
+      <div class="footer-cols">
+        <div>
+          <h4><span class="lang-es">Sitio</span><span class="lang-en">Site</span></h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+            <li><a href="experiencia.html"><span class="lang-es">Experiencia</span><span class="lang-en">Experience</span></a></li>
+            <li><a href="glosario.html"><span class="lang-es">Glosario</span><span class="lang-en">Glossary</span></a></li>
+            <li><a href="conclusion.html"><span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Conferencia</span><span class="lang-en">Conference</span></h4>
+          <ul>
+            <li><a href="index.html#conferencista"><span class="lang-es">Sara Viloria</span><span class="lang-en">Sara Viloria</span></a></li>
+            <li><a href="index.html#historia"><span class="lang-es">Historia del color</span><span class="lang-en">History of color</span></a></li>
+            <li><a href="index.html#circulo"><span class="lang-es">Círculo cromático</span><span class="lang-en">Color wheel</span></a></li>
+            <li><a href="index.html#psicologia"><span class="lang-es">Psicología del color</span><span class="lang-en">Color psychology</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Recursos</span><span class="lang-en">Resources</span></h4>
+          <ul>
+            <li><a href="https://www.pantone.com/" target="_blank" rel="noopener">Pantone Institute</a></li>
+            <li><a href="https://www.rae.es/" target="_blank" rel="noopener">RAE</a></li>
+            <li><a href="https://saloria.cl/" target="_blank" rel="noopener">Sara Viloria — Saloria</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Créditos</span><span class="lang-en">Credits</span></h4>
+          <ul>
+            <li><span class="lang-es">Conferencista: Sara Viloria</span><span class="lang-en">Speaker: Sara Viloria</span></li>
+            <li><span class="lang-es">Proyecto académico ECCI</span><span class="lang-en">ECCI academic project</span></li>
+            <li><span class="lang-es">Iconografía: Bootstrap Icons</span><span class="lang-en">Icons: Bootstrap Icons</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Moda ECCI — ECCI</span>
+        <a href="index.html#inicio" class="back-to-top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+          <span class="lang-es">Volver arriba</span><span class="lang-en">Back to top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

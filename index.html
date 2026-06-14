@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moda ECCI · Crónica de la conferencia de Teoría del Color con Sara Viloria</title>
+  <meta name="description" content="Moda ECCI: una crónica visual e interactiva de la conferencia de Teoría del Color impartida por la colorista Sara Viloria, y su relación con el Frontend, el UX y el UI.">
+  <meta name="author" content="Moda ECCI · ECCI">
+
+  <!-- Open Graph básico (SEO) -->
+  <meta property="og:title" content="Moda ECCI · Teoría del Color con Sara Viloria">
+  <meta property="og:description" content="Una exploración visual e interactiva sobre color, diseño y Frontend a partir de la conferencia de Sara Viloria.">
+  <meta property="og:type" content="website">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (CDN) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Hoja de estilos propia -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Enlace de salto para accesibilidad -->
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="progress-rail" aria-hidden="true">
+    <div class="progress-rail__bar"></div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-ecci" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-dot" aria-hidden="true"></span>
+          Moda ECCI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+            <li class="nav-item"><a class="nav-link active" href="index.html">
+              <span class="lang-es">Inicio</span><span class="lang-en">Home</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">
+              <span class="lang-es">Experiencia</span><span class="lang-en">Experience</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="glosario.html">
+              <span class="lang-es">Glosario</span><span class="lang-en">Glossary</span>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="conclusion.html">
+              <span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span>
+            </a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <div class="lang-switch" role="group" aria-label="Selector de idioma / Language switch">
+                <button type="button" data-lang-option="es" aria-pressed="true">ES</button>
+                <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="hero__eyebrow eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="lang-es">Crónica de una conferencia · Teoría del color</span>
+          <span class="lang-en">Conference chronicle · Color theory</span>
+        </div>
+
+        <h1 class="display-huge hero__title">
+          <span>MODA</span><span class="text-clay">ECCI</span>
+        </h1>
+
+        <p class="hero__subtitle lang-es">
+          Un evento académico sobre moda, creatividad e innovación que, esta vez, nos llevó
+          a detenernos en algo que damos por hecho todos los días: el color. Esta es la
+          crónica de la conferencia de <strong>Sara Viloria</strong>, colorista chilena,
+          y de todo lo que aprendimos sobre cómo el color construye significado&nbsp;—
+          y cómo eso se conecta directamente con el diseño de interfaces.
+        </p>
+        <p class="hero__subtitle lang-en">
+          An academic event on fashion, creativity and innovation that, this time, made us
+          pause on something we take for granted every day: color. This is the chronicle of
+          <strong>Sara Viloria's</strong> talk, a Chilean colorist, and everything we learned
+          about how color builds meaning — and how that connects directly to interface design.
+        </p>
+
+        <div class="hero__meta">
+          <span><span class="sw" style="background:var(--clay)" aria-hidden="true"></span>
+            <span class="lang-es">Evento académico de moda</span><span class="lang-en">Academic fashion event</span>
+          </span>
+          <span><span class="sw" style="background:var(--ochre)" aria-hidden="true"></span>
+            <span class="lang-es">Charla central: Teoría del Color</span><span class="lang-en">Keynote: Color Theory</span>
+          </span>
+          <span><span class="sw" style="background:var(--indigo)" aria-hidden="true"></span>
+            <span class="lang-es">Conferencista: Sara Viloria</span><span class="lang-en">Speaker: Sara Viloria</span>
+          </span>
+          <span><span class="sw" style="background:var(--viridian)" aria-hidden="true"></span>
+            <span class="lang-es">Colorista certificada Pantone</span><span class="lang-en">Pantone certified colorist</span>
+          </span>
+        </div>
+      </div>
+
+      <button class="hero__scroll" type="button" aria-label="Desplazarse a la galería de fotos">
+        <span class="lang-es">Ver Galería</span>
+        <span class="lang-en">View Gallery</span>
+        <span class="line" aria-hidden="true"></span>
+      </button>
+    </section>
+
+    <!-- ============================================================
+         LA CONFERENCISTA — SARA VILORIA
+         ============================================================ -->
+    <section id="conferencista" class="section-pad bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-indigo reveal">
+          <span class="chip-swatch" style="background:var(--indigo)" aria-hidden="true"></span>
+          <span class="lang-es">La conferencista</span><span class="lang-en">The speaker</span>
+          <span class="chip-code">#3D4A78</span>
+        </div>
+
+        <div class="speaker">
+          <div class="speaker__card reveal">
+            <img class="speaker__photo" src="img/Sara_Viloria.jpg"
+                 alt="Sara Viloria, colorista y conferencista, durante su charla en Moda ECCI"
+                 loading="lazy">
+            <span class="speaker__monogram" aria-hidden="true">SV</span>
+            <div class="speaker__card-label">
+            </div>
+          </div>
+
+          <div class="reveal">
+            <h2 class="section-title">
+              <span class="lang-es">Una mirada que entrena la mirada</span>
+              <span class="lang-en">A gaze that trains the gaze</span>
+            </h2>
+
+            <p class="lang-es">
+              Nacida en 1991, Sara Viloria es Licenciada en Artes Visuales y Diplomada en
+              Ilustración y Arte en su Expresión Territorial. Es <strong>Colorista Certificada
+              por Leatrice Eiseman</strong>, directora ejecutiva del Pantone Institute, lo que
+              la sitúa entre las voces con mayor autoridad en habla hispana para hablar de
+              color desde una perspectiva técnica, sensible y cultural a la vez.
+            </p>
+            <p class="lang-en">
+              Born in 1991, Sara Viloria holds a degree in Visual Arts and a diploma in
+              Illustration and Art in its Territorial Expression. She is a <strong>Colorist
+              Certified by Leatrice Eiseman</strong>, Executive Director of the Pantone
+              Institute — placing her among the most authoritative Spanish-speaking voices
+              on color from a technical, sensory and cultural standpoint at once.
+            </p>
+
+            <p class="lang-es">
+              Su trayectoria combina la gestión cultural con la creación: ha sido
+              <strong>Coordinadora de Educación del Museo de Artes Visuales (MAVI) de
+              Santiago</strong>, mediadora cultural para el Departamento de Pueblos
+              Originarios y curadora de arte. En paralelo, su obra personal como pintora,
+              poeta y escritora le ha valido la <strong>Beca de la Fundación Neruda
+              (2021)</strong> y el <strong>Premio Lily Peter Fellowship</strong> en Estados
+              Unidos.
+            </p>
+            <p class="lang-en">
+              Her career blends cultural management with creation: she has been
+              <strong>Education Coordinator at the Museum of Visual Arts (MAVI) in
+              Santiago</strong>, a cultural mediator for the Department of Indigenous
+              Peoples, and an art curator. At the same time, her personal work as a painter,
+              poet and writer earned her the <strong>Fundación Neruda Fellowship (2021)</strong>
+              and the <strong>Lily Peter Fellowship</strong> in the United States.
+            </p>
+
+            <div class="speaker__tags" aria-label="Áreas de trabajo de Sara Viloria">
+              <span class="tag">Artes Visuales</span>
+              <span class="tag">Colorista certificada Pantone</span>
+              <span class="tag">Curaduría de arte</span>
+              <span class="tag">Mediación cultural</span>
+              <span class="tag">Pintura &amp; acuarela</span>
+              <span class="tag">Poesía &amp; escritura</span>
+            </div>
+
+            <div class="speaker__books" aria-label="Libros publicados">
+              <div class="book">
+                <span class="spine" style="background:var(--clay)" aria-hidden="true"></span>
+                <div>
+                  <h4>Color y Acuarela: Guía Breve para un Mundo Infinito</h4>
+                  <p class="lang-es">Una introducción cercana a la teoría del color aplicada a la acuarela, pensada para quienes recién comienzan a mirar el color con atención.</p>
+                  <p class="lang-en">An approachable introduction to color theory applied to watercolor, written for anyone beginning to look closely at color.</p>
+                </div>
+              </div>
+              <div class="book">
+                <span class="spine" style="background:var(--rose)" aria-hidden="true"></span>
+                <div>
+                  <h4>Cartas para Siena</h4>
+                  <p class="lang-es">Una obra literaria íntima en la que la escritura y la experiencia personal de la autora se entrelazan con su sensibilidad como artista visual.</p>
+                  <p class="lang-en">An intimate literary work in which the author's writing and personal experience intertwine with her sensibility as a visual artist.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="nota-frontend">
+              <strong><span class="lang-es">Nota Frontend</span><span class="lang-en">Frontend note</span></strong>
+              <p class="lang-es">
+                Que una experta en color tenga formación curatorial y editorial no es casual:
+                diseñar una interfaz también es <em>curar</em> qué se ve primero, qué se
+                jerarquiza y qué se acompaña con qué. La sensibilidad de un museógrafo y la de
+                un diseñador UI comparten más de lo que parece.
+              </p>
+              <p class="lang-en">
+                It's no coincidence that a color expert has a curatorial and editorial
+                background: designing an interface is also a form of <em>curation</em> — what
+                is seen first, what is hierarchized, and what sits next to what. A museum
+                curator's sensibility and a UI designer's have more in common than they
+                appear to.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CITA 1
+         ============================================================ -->
+    <section class="quote-block bg-ink">
+      <div class="container">
+        <div class="quote-block__mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>
+          <span class="lang-es">Respondemos a distintos estímulos visuales, muchos más de los que somos capaces de procesar coherentemente.</span>
+          <span class="lang-en">We respond to many different visual stimuli — far more than we are able to process coherently.</span>
+        </blockquote>
+        <cite>Sara Viloria — Moda ECCI</cite>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ¿QUÉ ES EL COLOR? — DEFINICIONES Y REFLEXIÓN
+         ============================================================ -->
+    <section id="definir-color" class="section-pad bg-paper">
+      <div class="container">
+        <div class="chip-label text-clay reveal">
+          <span class="chip-swatch" style="background:var(--clay)" aria-hidden="true"></span>
+          <span class="lang-es">Definir lo indefinible</span><span class="lang-en">Defining the undefinable</span>
+          <span class="chip-code">#C1502E</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">¿Qué es, exactamente, el color?</span>
+          <span class="lang-en">What, exactly, is color?</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Una de las primeras cosas que hizo Sara Viloria en su charla fue algo
+            aparentemente simple: leer en voz alta cómo dos diccionarios de referencia
+            definen la palabra "color". El ejercicio reveló algo incómodo: incluso las
+            fuentes más autorizadas no logran ponerse de acuerdo del todo.
+          </span>
+          <span class="lang-en">
+            One of the first things Sara Viloria did in her talk was something seemingly
+            simple: read aloud how two reference dictionaries define the word "color". The
+            exercise revealed something uncomfortable: even the most authoritative sources
+            don't fully agree.
+          </span>
+        </p>
+
+        <div class="def-grid reveal-stagger">
+          <div class="def-card">
+            <span class="eyebrow">RAE — Real Academia Española</span>
+            <p class="lang-es">
+              La RAE describe el color como una <strong>sensación</strong> producida por
+              los rayos luminosos que impresionan los órganos visuales y que depende de la
+              longitud de onda de dichos rayos. Es decir: lo define desde la
+              <strong>percepción</strong>, desde lo que ocurre en quien observa.
+            </p>
+            <p class="lang-en">
+              The RAE describes color as a <strong>sensation</strong> produced by light rays
+              that affect the visual organs, depending on their wavelength. In other words,
+              it defines color from the side of <strong>perception</strong> — from what
+              happens in the observer.
+            </p>
+          </div>
+          <div class="def-card def-card--alt">
+            <span class="eyebrow">Oxford</span>
+            <p class="lang-es">
+              El diccionario de Oxford, en cambio, tiende a describirlo como una
+              <strong>propiedad</strong> que poseen los objetos y que se hace visible gracias
+              a la forma en que reflejan o emiten la luz. Aquí el énfasis está en el
+              <strong>objeto</strong>, no en quien lo mira.
+            </p>
+            <p class="lang-en">
+              Oxford, on the other hand, tends to describe it as a <strong>property</strong>
+              that objects possess, made visible by the way they reflect or emit light. Here
+              the emphasis is on the <strong>object</strong>, not on the person looking at it.
+            </p>
+          </div>
+        </div>
+
+        <div class="reflexion-box reveal">
+          <span class="reflexion-tag lang-es">Reflexión</span>
+          <span class="reflexion-tag lang-en">Reflection</span>
+          <p class="lang-es">
+            &ldquo;Es más fácil definir cómo nos hace sentir algo que explicar lo que
+            significa en sí mismo.&rdquo;
+          </p>
+          <p class="lang-en">
+            &ldquo;It's easier to define how something makes us feel than to explain what
+            it means in itself.&rdquo;
+          </p>
+        </div>
+
+        <div class="nota-frontend reveal">
+          <strong><span class="lang-es">Nota Frontend</span><span class="lang-en">Frontend note</span></strong>
+          <p class="lang-es">
+            Esta tensión entre <em>percepción</em> y <em>propiedad</em> es exactamente la que
+            vivimos al diseñar interfaces: un botón "azul" no es solo un valor hexadecimal
+            (la propiedad), es también la confianza, calma o urgencia que ese azul transmite
+            a quien lo ve (la percepción). Diseñar bien implica sostener ambas miradas a la vez.
+          </p>
+          <p class="lang-en">
+            This tension between <em>perception</em> and <em>property</em> is exactly what
+            we live through when designing interfaces: a "blue" button is not just a hex
+            value (the property) — it's also the trust, calm or urgency that blue conveys to
+            whoever sees it (the perception). Good design holds both views at once.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CITA 2
+         ============================================================ -->
+    <section class="quote-block bg-indigo">
+      <div class="container">
+        <div class="quote-block__mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>
+          <span class="lang-es">Una persona con colores nunca está sola.</span>
+          <span class="lang-en">A person with colors is never alone.</span>
+        </blockquote>
+        <cite>Sara Viloria — Moda ECCI</cite>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HISTORIA DEL COLOR
+         ============================================================ -->
+    <section id="historia" class="section-pad bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-ochre reveal">
+          <span class="chip-swatch" style="background:var(--ochre)" aria-hidden="true"></span>
+          <span class="lang-es">Una memoria con color</span><span class="lang-en">A memory in color</span>
+          <span class="chip-code">#D9A441</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">Historia del color: poder, fe, estatus y riesgo</span>
+          <span class="lang-en">A history of color: power, faith, status and risk</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Antes de ser una herramienta de diseño, el color fue —y sigue siendo— un sistema
+            de signos. A lo largo de la historia, ciertos colores se reservaron para la
+            realeza, otros se cargaron de simbolismo religioso, y algunos pigmentos llegaron
+            a poner en riesgo la salud de quienes los producían o usaban.
+          </span>
+          <span class="lang-en">
+            Before becoming a design tool, color was — and still is — a system of signs.
+            Throughout history, certain colors were reserved for royalty, others were loaded
+            with religious symbolism, and some pigments even put the health of those who
+            produced or wore them at risk.
+          </span>
+        </p>
+
+        <div class="timeline reveal-stagger">
+          <div class="timeline__item" style="--era-color: var(--ochre)">
+            <span class="timeline__era">
+              <span class="lang-es">Antigüedad · Realeza</span><span class="lang-en">Antiquity · Royalty</span>
+            </span>
+            <h3>
+              <span class="lang-es">El púrpura, color del poder</span>
+              <span class="lang-en">Purple, the color of power</span>
+            </h3>
+            <p class="lang-es">
+              El púrpura tirio se obtenía a partir de moluscos marinos mediante un proceso
+              tan laborioso que se necesitaban miles de ejemplares para teñir una sola
+              prenda. Su escasez y su altísimo costo lo convirtieron en sinónimo de realeza
+              y autoridad en distintas culturas mediterráneas.
+            </p>
+            <p class="lang-en">
+              Tyrian purple was extracted from sea snails through a process so laborious
+              that thousands of specimens were needed to dye a single garment. Its scarcity
+              and high cost made it synonymous with royalty and authority across several
+              Mediterranean cultures.
+            </p>
+          </div>
+
+          <div class="timeline__item" style="--era-color: var(--indigo)">
+            <span class="timeline__era">
+              <span class="lang-es">Edad Media · Religión</span><span class="lang-en">Middle Ages · Religion</span>
+            </span>
+            <h3>
+              <span class="lang-es">El azul ultramar y lo sagrado</span>
+              <span class="lang-en">Ultramarine blue and the sacred</span>
+            </h3>
+            <p class="lang-es">
+              El pigmento azul ultramar se elaboraba a partir de lapislázuli, una piedra
+              importada desde yacimientos lejanos. Su valor llegó a equipararse al del oro,
+              por lo que se reservaba casi exclusivamente para representar figuras sagradas
+              en la pintura religiosa.
+            </p>
+            <p class="lang-en">
+              Ultramarine blue pigment was made from lapis lazuli, a stone imported from
+              distant mines. Its value rivaled that of gold, so it was reserved almost
+              exclusively for depicting sacred figures in religious painting.
+            </p>
+          </div>
+
+          <div class="timeline__item" style="--era-color: var(--paper-soft, var(--clay))">
+            <span class="timeline__era">
+              <span class="lang-es">Renacimiento · Pureza y estatus</span><span class="lang-en">Renaissance · Purity and status</span>
+            </span>
+            <h3>
+              <span class="lang-es">El blanco impecable</span>
+              <span class="lang-en">Immaculate white</span>
+            </h3>
+            <p class="lang-es">
+              Mantener telas blancas perfectamente limpias era costoso y poco práctico, así
+              que el blanco impoluto se asoció a la pureza moral y, al mismo tiempo, a la
+              capacidad económica de quien podía permitírselo sin trabajar la tierra.
+            </p>
+            <p class="lang-en">
+              Keeping white fabrics perfectly clean was expensive and impractical, so
+              pristine white became associated with moral purity and, simultaneously, with
+              the economic means of those who could afford it without working the land.
+            </p>
+          </div>
+
+          <div class="timeline__item" style="--era-color: var(--viridian)">
+            <span class="timeline__era">
+              <span class="lang-es">Siglo XVIII–XIX · Riesgo</span><span class="lang-en">18th–19th century · Risk</span>
+            </span>
+            <h3>
+              <span class="lang-es">Pigmentos hermosos, pigmentos tóxicos</span>
+              <span class="lang-en">Beautiful pigments, toxic pigments</span>
+            </h3>
+            <p class="lang-es">
+              Pigmentos como el verde de Scheele o el albayalde (blanco de plomo) ofrecían
+              tonos muy apreciados, pero contenían arsénico o plomo. Quienes los fabricaban
+              o usaban con frecuencia —pintores, artesanos textiles— pagaban un precio
+              de salud por esa belleza.
+            </p>
+            <p class="lang-en">
+              Pigments such as Scheele's green or lead white produced highly prized hues,
+              but contained arsenic or lead. Those who manufactured or wore them frequently
+              — painters, textile artisans — paid a health price for that beauty.
+            </p>
+          </div>
+
+          <div class="timeline__item" style="--era-color: var(--rose)">
+            <span class="timeline__era">
+              <span class="lang-es">Siglo XX · Estandarización</span><span class="lang-en">20th century · Standardization</span>
+            </span>
+            <h3>
+              <span class="lang-es">Del taller al sistema: nace Pantone</span>
+              <span class="lang-en">From the workshop to the system: Pantone is born</span>
+            </h3>
+            <p class="lang-es">
+              La creación de sistemas de identificación cromática como Pantone respondió a
+              una necesidad muy concreta: que una misma "tinta roja" significara
+              exactamente lo mismo en una fábrica de Bogotá y en una de Milán. El color dejó
+              de ser solo arte para volverse, también, un lenguaje técnico compartido.
+            </p>
+            <p class="lang-en">
+              The creation of color identification systems like Pantone responded to a very
+              concrete need: that the same "red ink" would mean exactly the same thing in a
+              factory in Bogotá and one in Milan. Color stopped being only art and became,
+              also, a shared technical language.
+            </p>
+          </div>
+        </div>
+
+        <!-- ACORDEÓN — profundización -->
+        <div class="accordion mt-5 reveal" id="historiaAccordion">
+          <h3 class="h5 mb-3 font-mono">
+            <span class="lang-es">Profundiza en cada época</span>
+            <span class="lang-en">Go deeper into each era</span>
+          </h3>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hist1" aria-expanded="true" aria-controls="hist1">
+                <span class="lang-es">¿Por qué el púrpura era tan caro?</span>
+                <span class="lang-en">Why was purple so expensive?</span>
+              </button>
+            </h4>
+            <div id="hist1" class="accordion-collapse collapse show" data-bs-parent="#historiaAccordion">
+              <div class="accordion-body">
+                <p class="lang-es">
+                  El costo no era solo simbólico: el proceso de extracción del tinte
+                  implicaba recolectar grandes volúmenes de moluscos, una labor intensiva en
+                  tiempo y mano de obra. La escasez y la dificultad de producción —no un
+                  decreto arbitrario— fueron las que terminaron convirtiendo al púrpura en
+                  un color de élite.
+                </p>
+                <p class="lang-en">
+                  The cost wasn't only symbolic: the dye-extraction process involved
+                  gathering large volumes of mollusks, an effort intensive in both time and
+                  labor. Scarcity and production difficulty — not an arbitrary decree —
+                  ended up turning purple into an elite color.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hist2" aria-expanded="false" aria-controls="hist2">
+                <span class="lang-es">¿Qué tiene que ver esto con el branding actual?</span>
+                <span class="lang-en">What does this have to do with branding today?</span>
+              </button>
+            </h4>
+            <div id="hist2" class="accordion-collapse collapse" data-bs-parent="#historiaAccordion">
+              <div class="accordion-body">
+                <p class="lang-es">
+                  Mucho: las marcas siguen "reservando" colores para sí mismas como una
+                  forma de estatus simbólico (piénsese en el morado o el dorado asociados a
+                  productos premium). La diferencia es que hoy esa exclusividad no depende
+                  de la escasez del pigmento, sino de la consistencia con la que una marca
+                  ocupa ese color en la mente de las personas.
+                </p>
+                <p class="lang-en">
+                  A lot: brands still "reserve" colors for themselves as a form of symbolic
+                  status (think of purple or gold associated with premium products). The
+                  difference is that this exclusivity no longer depends on pigment
+                  scarcity, but on how consistently a brand occupies that color in people's
+                  minds.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hist3" aria-expanded="false" aria-controls="hist3">
+                <span class="lang-es">¿Siguen existiendo pigmentos riesgosos hoy?</span>
+                <span class="lang-en">Do risky pigments still exist today?</span>
+              </button>
+            </h4>
+            <div id="hist3" class="accordion-collapse collapse" data-bs-parent="#historiaAccordion">
+              <div class="accordion-body">
+                <p class="lang-es">
+                  La regulación moderna ha eliminado o restringido la mayoría de los
+                  pigmentos más peligrosos, pero la lección histórica sigue vigente: detrás
+                  de cada color hay una cadena de producción, y vale la pena preguntarse de
+                  dónde viene y a qué costo, también en la industria textil actual.
+                </p>
+                <p class="lang-en">
+                  Modern regulation has eliminated or restricted most of the most dangerous
+                  pigments, but the historical lesson still holds: behind every color there
+                  is a production chain, and it's worth asking where it comes from and at
+                  what cost — including in today's textile industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nota-frontend reveal">
+          <strong><span class="lang-es">Nota Frontend</span><span class="lang-en">Frontend note</span></strong>
+          <p class="lang-es">
+            La idea de "color reservado para algo importante" tiene un eco directo en UI:
+            cuando un solo color se usa exclusivamente para acciones críticas (eliminar,
+            confirmar, alertar), ese color adquiere un significado casi institucional dentro
+            del producto — exactamente como el púrpura en la antigüedad.
+          </p>
+          <p class="lang-en">
+            The idea of a "color reserved for something important" has a direct echo in UI:
+            when a single color is used exclusively for critical actions (delete, confirm,
+            alert), that color acquires an almost institutional meaning within the product
+            — just like purple in antiquity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         IMPORTANCIA DEL COLOR
+         ============================================================ -->
+    <section id="importancia" class="section-pad bg-paper">
+      <div class="container">
+        <div class="chip-label text-viridian reveal">
+          <span class="chip-swatch" style="background:var(--viridian)" aria-hidden="true"></span>
+          <span class="lang-es">De la teoría a la práctica</span><span class="lang-en">From theory to practice</span>
+          <span class="chip-code">#2F6F5E</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">¿Por qué es importante saber de color?</span>
+          <span class="lang-en">Why is it important to know about color?</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Para Sara Viloria, entender el color no es un lujo estético: es una forma de
+            <strong>objetivar lo subjetivo</strong>, de traducir una sensación en una
+            decisión que se puede comunicar, repetir y mejorar. Estos son algunos campos
+            donde esa traducción ocurre todos los días.
+          </span>
+          <span class="lang-en">
+            For Sara Viloria, understanding color is not an aesthetic luxury: it's a way of
+            <strong>objectifying the subjective</strong>, of translating a sensation into a
+            decision that can be communicated, repeated and improved. Here are some fields
+            where that translation happens every day.
+          </span>
+        </p>
+
+        <div class="row g-3 mt-2 reveal-stagger">
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">01</span>
+                <h3><span class="lang-es">Objetivar lo subjetivo</span><span class="lang-en">Objectifying the subjective</span></h3>
+                <p class="lang-es">Convertir "se ve bien" en criterios de tono, contraste y armonía que se pueden explicar y defender.</p>
+                <p class="lang-en">Turning "it looks good" into criteria of hue, contrast and harmony that can be explained and defended.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">02</span>
+                <h3><span class="lang-es">Diseño gráfico</span><span class="lang-en">Graphic design</span></h3>
+                <p class="lang-es">Establecer jerarquías visuales y sistemas de marca coherentes a partir de paletas con propósito.</p>
+                <p class="lang-en">Building visual hierarchies and coherent brand systems from purposeful palettes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">03</span>
+                <h3><span class="lang-es">Industria textil</span><span class="lang-en">Textile industry</span></h3>
+                <p class="lang-es">Asegurar que un mismo tono se reproduzca de forma consistente entre proveedores, telas y lotes.</p>
+                <p class="lang-en">Ensuring the same shade is reproduced consistently across suppliers, fabrics and batches.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">04</span>
+                <h3><span class="lang-es">Bordado y tejido</span><span class="lang-en">Embroidery &amp; weaving</span></h3>
+                <p class="lang-es">Elegir combinaciones de hilos que mantengan legibilidad y contraste incluso a pequeña escala.</p>
+                <p class="lang-en">Choosing thread combinations that keep legibility and contrast even at small scale.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">05</span>
+                <h3><span class="lang-es">Ilustración y diseño</span><span class="lang-en">Illustration &amp; design</span></h3>
+                <p class="lang-es">Usar el color para guiar la mirada del espectador a través de una composición, casi como un mapa.</p>
+                <p class="lang-en">Using color to guide the viewer's eye through a composition, almost like a map.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">06</span>
+                <h3><span class="lang-es">Publicidad</span><span class="lang-en">Advertising</span></h3>
+                <p class="lang-es">Generar reconocimiento inmediato de marca a través de combinaciones cromáticas memorables.</p>
+                <p class="lang-en">Generating instant brand recognition through memorable color combinations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">07</span>
+                <h3><span class="lang-es">Colorimetría</span><span class="lang-en">Colorimetry</span></h3>
+                <p class="lang-es">Medir el color de forma estandarizada para que "el mismo color" lo sea de verdad en cualquier pantalla o material.</p>
+                <p class="lang-en">Measuring color in a standardized way so "the same color" really is the same on any screen or material.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card importance-card">
+              <div class="card-body p-0">
+                <span class="num">08</span>
+                <h3><span class="lang-es">Industria alimentaria</span><span class="lang-en">Food industry</span></h3>
+                <p class="lang-es">El color de un alimento comunica frescura, sabor esperado y calidad antes de que se pruebe un solo bocado.</p>
+                <p class="lang-en">A food's color communicates freshness, expected flavor and quality before a single bite is tasted.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-1">
+          <div class="col-12">
+            <div class="nota-frontend reveal">
+              <strong><span class="lang-es">Nota Frontend</span><span class="lang-en">Frontend note</span></strong>
+              <p class="lang-es">
+                Todos estos campos comparten una idea: <strong>el color como sistema</strong>,
+                no como decisión aislada. En UX/UI ocurre lo mismo cuando definimos tokens de
+                color (primario, secundario, de error, de éxito): no estamos eligiendo
+                "colores bonitos", estamos diseñando un lenguaje que debe funcionar igual en
+                un botón, una notificación o un gráfico de datos.
+              </p>
+              <p class="lang-en">
+                All these fields share one idea: <strong>color as a system</strong>, not as
+                an isolated decision. The same happens in UX/UI when we define color tokens
+                (primary, secondary, error, success): we're not picking "pretty colors",
+                we're designing a language that must work the same way in a button, a
+                notification or a data chart.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="nota-frontend reveal">
+              <strong><span class="lang-es">Inspiración del entorno</span><span class="lang-en">Inspiration from the environment</span></strong>
+              <p class="lang-es">
+                Viloria también insistió en algo muy simple: muchas de las mejores paletas no
+                se inventan, se <em>observan</em> — en un atardecer, una fachada, un mercado.
+                Para un diseñador de producto, "salir a mirar" es tan parte del trabajo como
+                abrir Figma.
+              </p>
+              <p class="lang-en">
+                Viloria also stressed something very simple: many of the best palettes
+                aren't invented, they're <em>observed</em> — in a sunset, a façade, a market.
+                For a product designer, "going outside to look" is as much part of the job as
+                opening Figma.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CÍRCULO CROMÁTICO INTERACTIVO
+         ============================================================ -->
+    <section id="circulo" class="section-pad bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-rose reveal">
+          <span class="chip-swatch" style="background:var(--rose)" aria-hidden="true"></span>
+          <span class="lang-es">Herramienta interactiva</span><span class="lang-en">Interactive tool</span>
+          <span class="chip-code">#C15F76</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">El círculo cromático, en tus manos</span>
+          <span class="lang-en">The color wheel, in your hands</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Toca o haz clic en cualquier color del círculo para explorar sus relaciones:
+            complementarios, análogos, tríadas, y las combinaciones de cuadrado y rectángulo
+            cromático. Cada relación produce un tipo de paleta distinto — y todas son
+            legítimas dependiendo de lo que quieras comunicar.
+          </span>
+          <span class="lang-en">
+            Tap or click any color on the wheel to explore its relationships: complementary,
+            analogous, triadic, and the color-square and color-rectangle combinations. Each
+            relationship produces a different kind of palette — and all of them are valid
+            depending on what you want to communicate.
+          </span>
+        </p>
+
+        <div class="wheel-wrap">
+          <div class="color-wheel-stage reveal">
+            <svg id="color-wheel-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Círculo cromático interactivo de 12 colores">
+              <g id="cw-wedges"></g>
+              <circle class="cw-center" cx="150" cy="150" r="58"></circle>
+              <text id="cw-label-main" class="cw-center-label" x="150" y="145" style="font-size:13px; font-family: var(--font-display); letter-spacing: 0; text-transform:none;"></text>
+              <text id="cw-label-sub" class="cw-center-label" x="150" y="163"></text>
+            </svg>
+          </div>
+
+          <div class="wheel-info reveal">
+            <div class="wheel-controls" role="group" aria-label="Tipo de relación cromática">
+              <button type="button" data-relation="complementario" class="active">
+                <span class="lang-es">Complementarios</span><span class="lang-en">Complementary</span>
+              </button>
+              <button type="button" data-relation="analogos">
+                <span class="lang-es">Análogos</span><span class="lang-en">Analogous</span>
+              </button>
+              <button type="button" data-relation="triada">
+                <span class="lang-es">Tríada</span><span class="lang-en">Triad</span>
+              </button>
+              <button type="button" data-relation="cuadrado">
+                <span class="lang-es">Cuadrado</span><span class="lang-en">Square</span>
+              </button>
+              <button type="button" data-relation="rectangulo">
+                <span class="lang-es">Rectángulo</span><span class="lang-en">Rectangle</span>
+              </button>
+            </div>
+
+            <div class="wheel-explainer">
+              <h3 id="wheel-explainer-title"></h3>
+              <p id="wheel-explainer-desc"></p>
+            </div>
+
+            <div class="wheel-palette" id="wheel-palette" aria-label="Paleta resultante"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CUALQUIER COMBINACIÓN PUEDE FUNCIONAR
+         ============================================================ -->
+    <section id="combinaciones" class="section-pad bg-paper">
+      <div class="container">
+        <div class="chip-label text-indigo reveal">
+          <span class="chip-swatch" style="background:var(--indigo)" aria-hidden="true"></span>
+          <span class="lang-es">Sin reglas absolutas</span><span class="lang-en">No absolute rules</span>
+          <span class="chip-code">#3D4A78</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">Cualquier combinación dentro del círculo puede funcionar</span>
+          <span class="lang-en">Any combination within the wheel can work</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Una de las ideas más liberadoras de la charla fue esta: no existe una
+            combinación "incorrecta" en sí misma. Lo que cambia es el <strong>contexto</strong>,
+            la <strong>proporción</strong> y la <strong>intención</strong> con la que se usa
+            cada color. Tres ejemplos de la misma idea, tres resultados muy distintos:
+          </span>
+          <span class="lang-en">
+            One of the most liberating ideas from the talk was this: there's no
+            combination that's "wrong" by itself. What changes is the
+            <strong>context</strong>, the <strong>proportion</strong> and the
+            <strong>intention</strong> behind each color. Three examples of the same idea,
+            three very different results:
+          </span>
+        </p>
+
+        <div class="row g-3 mt-2 reveal-stagger">
+          <div class="col-md-4">
+            <div class="combo-card">
+              <div class="combo-card__strip" aria-hidden="true">
+                <span style="background:#C1502E"></span>
+                <span style="background:#2F6F5E"></span>
+              </div>
+              <div class="combo-card__body">
+                <h3><span class="lang-es">Contraste editorial</span><span class="lang-en">Editorial contrast</span></h3>
+                <p class="lang-es">Terracota y viridián a partes iguales: vibrante, casi conflictivo, perfecto para un titular que debe detener el scroll.</p>
+                <p class="lang-en">Terracotta and viridian in equal parts: vibrant, almost conflicting — perfect for a headline meant to stop the scroll.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="combo-card">
+              <div class="combo-card__strip" aria-hidden="true">
+                <span style="background:#F6F1E7; flex:3"></span>
+                <span style="background:#C1502E; flex:1"></span>
+              </div>
+              <div class="combo-card__body">
+                <h3><span class="lang-es">El mismo par, otra proporción</span><span class="lang-en">Same pair, different ratio</span></h3>
+                <p class="lang-es">Los mismos colores, pero el terracota ahora ocupa solo un 25%: el resultado es cálido, equilibrado, propio de una landing page tranquila.</p>
+                <p class="lang-en">The same colors, but terracotta now covers only 25%: the result is warm, balanced — fitting for a calm landing page.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="combo-card">
+              <div class="combo-card__strip" aria-hidden="true">
+                <span style="background:#1C1A17"></span>
+                <span style="background:#D9A441"></span>
+                <span style="background:#C15F76"></span>
+              </div>
+              <div class="combo-card__body">
+                <h3><span class="lang-es">Tinta, ocre y rosa</span><span class="lang-en">Ink, ochre and rose</span></h3>
+                <p class="lang-es">Una combinación poco convencional en interfaces tradicionales, pero habitual en moda y editoriales: arriesgada, memorable, con identidad propia.</p>
+                <p class="lang-en">An unconventional combination for traditional interfaces, but common in fashion and editorial work: bold, memorable, with its own identity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         "EL COLOR ES UN LENGUAJE CAPRICHOSO"
+         ============================================================ -->
+    <section class="capricious">
+      <div class="container">
+        <p class="capricious__line">
+          <span class="lang-es">El lenguaje del</span>
+          <span class="lang-en">The language of</span>
+        </p>
+        <span class="capricious__color">
+          <span class="lang-es">color</span>
+          <span class="lang-en">color</span>
+        </span>
+        <p class="capricious__line">
+          <span class="lang-es">es, ante todo,</span>
+          <span class="lang-en">is, above all,</span>
+        </p>
+        <span class="capricious__caprichoso">
+          <span class="lang-es">caprichoso</span>
+          <span class="lang-en">capricious</span>
+        </span>
+        <p class="capricious__sub">
+          <span class="lang-es">Una de las ideas centrales de la conferencia de Sara Viloria — Moda ECCI</span>
+          <span class="lang-en">One of the central ideas from Sara Viloria's talk — Moda ECCI</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PSICOLOGÍA DEL COLOR
+         ============================================================ -->
+    <section id="psicologia" class="section-pad bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-clay reveal">
+          <span class="chip-swatch" style="background:var(--clay)" aria-hidden="true"></span>
+          <span class="lang-es">Con cautela</span><span class="lang-en">With caution</span>
+          <span class="chip-code">#C1502E</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">Psicología del color: útil, pero no universal</span>
+          <span class="lang-en">Color psychology: useful, but not universal</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            La psicología del color puede ser una herramienta valiosa para tomar decisiones
+            de diseño, pero Viloria fue enfática: <strong>el color también es cultural</strong>.
+            Las asociaciones cambian según el país, la historia y el contexto social, así que
+            conviene tratarlas como tendencias a verificar, no como verdades fijas.
+          </span>
+          <span class="lang-en">
+            Color psychology can be a valuable tool for design decisions, but Viloria was
+            emphatic: <strong>color is also cultural</strong>. Associations change depending
+            on country, history and social context, so they should be treated as tendencies
+            to verify — not as fixed truths.
+          </span>
+        </p>
+
+        <div class="row g-3 mt-2 reveal-stagger">
+          <div class="col-md-6 col-lg-3">
+            <div class="psych-card">
+              <span class="psych-color" style="background:var(--clay)" aria-hidden="true"></span>
+              <h3><span class="lang-es">Rojo</span><span class="lang-en">Red</span></h3>
+              <ul>
+                <li class="lang-es">Asociado a energía, urgencia o pasión en muchas culturas occidentales.</li>
+                <li class="lang-en">Linked to energy, urgency or passion in many Western cultures.</li>
+                <li class="lang-es">En otros contextos, símbolo de buena fortuna y celebración.</li>
+                <li class="lang-en">In other contexts, a symbol of good fortune and celebration.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="psych-card">
+              <span class="psych-color" style="background:var(--indigo)" aria-hidden="true"></span>
+              <h3><span class="lang-es">Azul</span><span class="lang-en">Blue</span></h3>
+              <ul>
+                <li class="lang-es">Frecuentemente ligado a confianza, calma y tecnología.</li>
+                <li class="lang-en">Frequently linked to trust, calm and technology.</li>
+                <li class="lang-es">Su tono exacto cambia radicalmente esa lectura: un azul casi negro no comunica lo mismo que un celeste pastel.</li>
+                <li class="lang-en">Its exact shade radically changes that reading: an almost-black blue doesn't communicate the same as a pastel sky blue.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="psych-card">
+              <span class="psych-color" style="background:var(--paper-soft); border:1px solid rgba(28,26,23,0.15)" aria-hidden="true"></span>
+              <h3><span class="lang-es">Blanco</span><span class="lang-en">White</span></h3>
+              <ul>
+                <li class="lang-es">En muchos contextos occidentales: pureza, simplicidad, minimalismo.</li>
+                <li class="lang-en">In many Western contexts: purity, simplicity, minimalism.</li>
+                <li class="lang-es">En otras tradiciones culturales, está asociado al luto y la despedida.</li>
+                <li class="lang-en">In other cultural traditions, it's associated with mourning and farewell.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="psych-card">
+              <span class="psych-color" style="background:var(--viridian)" aria-hidden="true"></span>
+              <h3><span class="lang-es">Verde</span><span class="lang-en">Green</span></h3>
+              <ul>
+                <li class="lang-es">Suele evocar naturaleza, crecimiento o "permiso para continuar" (como en un semáforo).</li>
+                <li class="lang-en">Often evokes nature, growth, or "permission to proceed" (as in a traffic light).</li>
+                <li class="lang-es">En ciertos mercados financieros, su lectura puede invertirse por completo.</li>
+                <li class="lang-en">In certain financial markets, its reading can be completely inverted.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="caveat-box reveal">
+          <span class="eyebrow"><span class="lang-es">Importante</span><span class="lang-en">Important</span></span>
+          <p class="lang-es">
+            Ninguna de estas asociaciones debería tratarse como una regla universal de
+            diseño. Antes de basar una decisión de marca o de producto en la "psicología"
+            de un color, vale la pena preguntarse: ¿para qué país, cultura y momento
+            histórico es válida esta asociación? ¿Y qué significa para las personas que
+            realmente van a usar esta interfaz?
+          </p>
+          <p class="lang-en">
+            None of these associations should be treated as a universal design rule. Before
+            basing a brand or product decision on the "psychology" of a color, it's worth
+            asking: for which country, culture and historical moment is this association
+            valid? And what does it mean for the people who will actually use this
+            interface?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALERÍA MULTIMEDIA
+         ============================================================ -->
+    <section id="galeria" class="section-pad bg-paper">
+      <div class="container">
+        <div class="chip-label text-ochre reveal">
+          <span class="chip-swatch" style="background:var(--ochre)" aria-hidden="true"></span>
+          <span class="lang-es">Memoria visual</span><span class="lang-en">Visual memory</span>
+          <span class="chip-code">#D9A441</span>
+        </div>
+
+        <h2 class="section-title reveal">
+          <span class="lang-es">Galería: un vistazo a Moda ECCI</span>
+          <span class="lang-en">Gallery: a look at Moda ECCI</span>
+        </h2>
+        <p class="section-lead reveal">
+          <span class="lang-es">
+            Algunos momentos del evento y de la conferencia de Sara Viloria, desde el
+            auditorio hasta los materiales y muestras de color que acompañaron la charla.
+          </span>
+          <span class="lang-en">
+            A few moments from the event and Sara Viloria's talk, from the auditorium to the
+            materials and color samples that accompanied it.
+          </span>
+        </p>
+
+        <!-- Carrusel destacado -->
+        <div id="galeriaCarousel" class="carousel slide gallery-carousel reveal" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="3" aria-label="Diapositiva 4"></button>
+            <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="4" aria-label="Diapositiva 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/img-evento-01.jpg" class="d-block w-100" alt="Ambientación principal de Moda ECCI en tonos cálidos">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-evento-02.jpg" class="d-block w-100" alt="Auditorio en tonos azules antes de iniciar la charla">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-evento-03.jpg" class="d-block w-100" alt="Escenario iluminado durante la conferencia">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-evento-04.jpg" class="d-block w-100" alt="Muestrario de colores sobre una mesa">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-evento-05.jpg" class="d-block w-100" alt="Detalle de telas y texturas de colores">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <!-- Grilla de 15 imágenes -->
+        <div class="gallery-grid reveal-stagger">
+          <button type="button" class="gallery-grid__item" data-num="01"
+            data-title-es="Bienvenida a Moda ECCI" data-title-en="Welcome to Moda ECCI"
+            data-desc-es="La ambientación principal del evento, con una paleta cálida que dio la bienvenida a los asistentes."
+            data-desc-en="The event's main setting, with a warm palette that welcomed attendees.">
+            <img src="img/img-evento-01.jpg" alt="Ambientación principal de Moda ECCI en tonos cálidos" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="02"
+            data-title-es="Stands" data-title-en="Stands"
+            data-desc-es="Distintos stands y áreas del evento relacionadas a la moda"
+            data-desc-en="Different stands and areas of the event related to fashion.">
+            <img src="img/img-evento-02.jpg" alt="Auditorio en tonos azules antes de iniciar la charla" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="03"
+            data-title-es="Decoración del evento" data-title-en="Event decoration"
+            data-desc-es="Decoración calida y elegante del evento acompañando a los diferentes participantes."
+            data-desc-en="Warm and elegant event decoration accompanying the different participants.">
+            <img src="img/img-evento-03.jpg" alt="Escenario iluminado durante la conferencia" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="04"
+            data-title-es="Aros de luz dorados" data-title-en="Golden light rings"
+            data-desc-es="Decoración dorada que transmite calidez y fashion."
+            data-desc-en="Golden decoration that conveys warmth and fashion.">
+            <img src="img/img-evento-04.jpg" alt="Muestrario de colores sobre una mesa" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="05"
+            data-title-es="Telas y texturas" data-title-en="Fabrics and textures"
+            data-desc-es="Detalle de materiales textiles utilizados para ejemplificar combinaciones cromáticas."
+            data-desc-en="Detail of textile materials used to demonstrate color combinations.">
+            <img src="img/img-evento-05.jpg" alt="Detalle de telas y texturas de colores" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="06"
+            data-title-es="El círculo cromático en pantalla" data-title-en="The color wheel on screen"
+            data-desc-es="Una de las diapositivas de la charla, mostrando el círculo cromático completo."
+            data-desc-en="One of the talk's slides, showing the complete color wheel.">
+            <img src="img/img-evento-06.jpg" alt="Círculo cromático proyectado durante la charla" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="07"
+            data-title-es="Acuarelas de Sara Viloria" data-title-en="Sara Viloria's watercolors"
+            data-desc-es="Una muestra del trabajo pictórico de la conferencista, presentada durante su intervención."
+            data-desc-en="A glimpse of the speaker's pictorial work, shared during her talk.">
+            <img src="img/img-evento-07.jpg" alt="Acuarela en tonos rosados y violetas" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="08"
+            data-title-es="Notas de la conferencia" data-title-en="Conference notes"
+            data-desc-es="Apuntes tomados durante la charla, resaltando las ideas clave en distintos colores."
+            data-desc-en="Notes taken during the talk, highlighting key ideas in different colors.">
+            <img src="img/img-evento-08.jpg" alt="Apuntes y notas con franjas de color" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="09"
+            data-title-es="Vista general del recinto" data-title-en="General view of the venue"
+            data-desc-es="Una vista amplia del espacio donde se desarrolló Moda ECCI."
+            data-desc-en="A wide view of the space where Moda ECCI took place.">
+            <img src="img/img-evento-09.jpg" alt="Vista general del recinto del evento" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="10"
+            data-title-es="Bordados y tejidos" data-title-en="Embroidery &amp; weaving"
+            data-desc-es="Piezas textiles que ejemplifican el uso del color en bordado y tejido."
+            data-desc-en="Textile pieces showcasing the use of color in embroidery and weaving.">
+            <img src="img/img-evento-10.jpg" alt="Detalle de bordado y tejido en distintos colores" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="11"
+            data-title-es="El público, atento" data-title-en="The audience, attentive"
+            data-desc-es="Asistentes siguiendo la conferencia desde sus asientos."
+            data-desc-en="Attendees following the talk from their seats.">
+            <img src="img/img-evento-11.jpg" alt="Público atento durante la charla" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="12"
+            data-title-es="Obra expuesta" data-title-en="Exhibited artwork"
+            data-desc-es="Una de las piezas exhibidas, en diálogo con la temática de la charla."
+            data-desc-en="One of the exhibited pieces, in dialogue with the talk's theme.">
+            <img src="img/img-evento-12.jpg" alt="Obra de arte expuesta en tonos rosados y ocres" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="13"
+            data-title-es="Identidad visual del evento" data-title-en="The event's visual identity"
+            data-desc-es="Elementos de identidad gráfica que acompañaron la señalética de Moda ECCI."
+            data-desc-en="Graphic identity elements that accompanied Moda ECCI's signage.">
+            <img src="img/img-evento-13.jpg" alt="Bloques de color de la identidad gráfica del evento" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="14"
+            data-title-es="Sesión de preguntas" data-title-en="Q&amp;A session"
+            data-desc-es="Momento de preguntas y respuestas tras la charla principal."
+            data-desc-en="Q&amp;A moment following the keynote.">
+            <img src="img/img-evento-14.jpg" alt="Cierre de la sesión con tonos cálidos" loading="lazy">
+          </button>
+          <button type="button" class="gallery-grid__item" data-num="15"
+            data-title-es="Cierre y networking" data-title-en="Closing &amp; networking"
+            data-desc-es="El cierre del evento, espacio de conversación entre asistentes y organizadores."
+            data-desc-en="The event's closing, a space for conversation between attendees and organizers.">
+            <img src="img/img-evento-15.jpg" alt="Cierre del evento con tonos morados y dorados" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de galería -->
+    <div class="modal fade" id="galeria-modal" tabindex="-1" aria-labelledby="galeria-modal-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="galeria-modal-title">
+              <span class="lang-es"></span><span class="lang-en"></span>
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img id="galeria-modal-img" src="" alt="">
+            <p id="galeria-modal-desc" class="mt-3">
+              <span class="lang-es"></span><span class="lang-en"></span>
+            </p>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button id="galeria-modal-prev" class="btn btn-pill btn-outline-paper" type="button">
+              &larr; <span class="lang-es">Anterior</span><span class="lang-en">Previous</span>
+            </button>
+            <span id="galeria-modal-counter" class="font-mono"></span>
+            <button id="galeria-modal-next" class="btn btn-pill btn-outline-paper" type="button">
+              <span class="lang-es">Siguiente</span><span class="lang-en">Next</span> &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         NAVEGACIÓN A OTRAS PÁGINAS
+         ============================================================ -->
+    <section class="section-pad bg-paper-soft">
+      <div class="container">
+        <div class="chip-label text-indigo reveal">
+          <span class="chip-swatch" style="background:var(--indigo)" aria-hidden="true"></span>
+          <span class="lang-es">Sigue explorando</span><span class="lang-en">Keep exploring</span>
+        </div>
+        <h2 class="section-title reveal">
+          <span class="lang-es">Tres formas más de recorrer Moda ECCI</span>
+          <span class="lang-en">Three more ways to explore Moda ECCI</span>
+        </h2>
+
+        <div class="row g-3 mt-2 reveal-stagger">
+          <div class="col-md-4">
+            <a href="experiencia.html" class="card page-cta bg-clay text-decoration-none">
+              <div class="card-body">
+                <span class="eyebrow"><span class="lang-es">Crónica personal</span><span class="lang-en">Personal chronicle</span></span>
+                <h3><span class="lang-es">Experiencia</span><span class="lang-en">Experience</span></h3>
+                <p class="lang-es">Lo que vivimos y aprendimos al participar de Moda ECCI, contado en primera persona.</p>
+                <p class="lang-en">What we lived and learned by attending Moda ECCI, told in first person.</p>
+                <span class="arrow"><span class="lang-es">Leer la crónica</span><span class="lang-en">Read the chronicle</span> &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="glosario.html" class="card page-cta bg-indigo text-decoration-none">
+              <div class="card-body">
+                <span class="eyebrow"><span class="lang-es">Vocabulario</span><span class="lang-en">Vocabulary</span></span>
+                <h3><span class="lang-es">Glosario</span><span class="lang-en">Glossary</span></h3>
+                <p class="lang-es">Más de 15 términos de teoría del color, diseño UX/UI, branding y accesibilidad, en español e inglés.</p>
+                <p class="lang-en">15+ terms on color theory, UX/UI design, branding and accessibility, in Spanish and English.</p>
+                <span class="arrow"><span class="lang-es">Ver términos</span><span class="lang-en">View terms</span> &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="conclusion.html" class="card page-cta bg-viridian text-decoration-none">
+              <div class="card-body">
+                <span class="eyebrow"><span class="lang-es">Cierre</span><span class="lang-en">Closing</span></span>
+                <h3><span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span></h3>
+                <p class="lang-es">Cómo el color, el diseño y la tecnología se conectan con la sostenibilidad y la producción responsable.</p>
+                <p class="lang-en">How color, design and technology connect to sustainability and responsible production.</p>
+                <span class="arrow"><span class="lang-es">Leer cierre</span><span class="lang-en">Read closing</span> &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2>MODA ECCI</h2>
+      <p class="max-w-prose">
+        <span class="lang-es">Una crónica visual sobre color, diseño y Frontend, a partir de la conferencia de Sara Viloria en Moda ECCI.</span>
+        <span class="lang-en">A visual chronicle on color, design and Frontend, based on Sara Viloria's talk at Moda ECCI.</span>
+      </p>
+
+      <div class="footer-cols">
+        <div>
+          <h4><span class="lang-es">Sitio</span><span class="lang-en">Site</span></h4>
+          <ul>
+            <li><a href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+            <li><a href="experiencia.html"><span class="lang-es">Experiencia</span><span class="lang-en">Experience</span></a></li>
+            <li><a href="glosario.html"><span class="lang-es">Glosario</span><span class="lang-en">Glossary</span></a></li>
+            <li><a href="conclusion.html"><span class="lang-es">Conclusión</span><span class="lang-en">Conclusion</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Conferencia</span><span class="lang-en">Conference</span></h4>
+          <ul>
+            <li><a href="index.html#conferencista"><span class="lang-es">Sara Viloria</span><span class="lang-en">Sara Viloria</span></a></li>
+            <li><a href="index.html#historia"><span class="lang-es">Historia del color</span><span class="lang-en">History of color</span></a></li>
+            <li><a href="index.html#circulo"><span class="lang-es">Círculo cromático</span><span class="lang-en">Color wheel</span></a></li>
+            <li><a href="index.html#psicologia"><span class="lang-es">Psicología del color</span><span class="lang-en">Color psychology</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Recursos</span><span class="lang-en">Resources</span></h4>
+          <ul>
+            <li><a href="https://www.pantone.com/" target="_blank" rel="noopener">Pantone Institute</a></li>
+            <li><a href="https://www.rae.es/" target="_blank" rel="noopener">RAE</a></li>
+            <li><a href="https://saloria.cl/" target="_blank" rel="noopener">Sara Viloria — Saloria</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><span class="lang-es">Créditos</span><span class="lang-en">Credits</span></h4>
+          <ul>
+            <li><span class="lang-es">Conferencista: Sara Viloria</span><span class="lang-en">Speaker: Sara Viloria</span></li>
+            <li><span class="lang-es">Proyecto académico ECCI</span><span class="lang-en">ECCI academic project</span></li>
+            <li><span class="lang-es">Iconografía: Bootstrap Icons</span><span class="lang-en">Icons: Bootstrap Icons</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Moda ECCI — Kevin Ricardo Moreno Medalles</span>
+        <a href="#inicio" class="back-to-top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+          <span class="lang-es">Volver arriba</span><span class="lang-en">Back to top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript propio -->
+  <script src="js/main.js"></script>
+</body>
+</html>
